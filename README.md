@@ -18,6 +18,3 @@ This repository contains:
 ## Model Diagrams
 ![Generator](images/generator.png)
 ![Discriminator](images/discriminator.png)
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
