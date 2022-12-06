@@ -13,8 +13,11 @@ This repository contains:
 ## Training System Configuration
 |  CPU | GPU | RAM |
 | :---: | :---: | :---: |
-|  Threadripper 3990x | RTX 3090 24 GB | 256 GB |
+|  AMD Threadripper 3990x | Nvidia RTX 3090 24 GB | 256 GB |
 
 ## Model Diagrams
 ![Generator](images/generator.png)
 ![Discriminator](images/discriminator.png)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
