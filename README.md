@@ -1,4 +1,4 @@
-# MLP-SRGAN
+# MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
 
 ![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)
 
