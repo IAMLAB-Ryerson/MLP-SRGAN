@@ -9,7 +9,6 @@ import pandas as pd
 import scipy.io as sio
 import glob, os
 import time
-#from volshow import vol_show as volshow
 
 def rangeNorm(vol):
 	"""Normalizes the intensity range of a volume from 0.0 to 1.0
