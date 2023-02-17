@@ -10,7 +10,7 @@ This repository contains:
 * MLP-SRGAN PyTorch inference script
 * No-reference image metrics
 
-The MLP-SRGAN scripts are preconfigured to run MLP-SRGAN (D-1). To reconfigure the scripts to use MLP-SRGAN (D-3) or MLP-SRGAN (D-5) set n_residual_blocks in GeneratorMixer in model.py to either 3 or 5 respectively.
+The MLP-SRGAN scripts are preconfigured to run MLP-SRGAN (D-1). To reconfigure the scripts to use MLP-SRGAN (D-3) or MLP-SRGAN (D-5) set n_residual_blocks in GeneratorMixer in model.py to either 3 or 5 respectively. The scripts as it stands is currently only compatible with 2D image formats or 3D .mat files.
 
 ## Dependencies
 * Python 3
