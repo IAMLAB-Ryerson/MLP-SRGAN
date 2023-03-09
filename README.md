@@ -14,7 +14,7 @@ The MLP-SRGAN scripts are preconfigured to run MLP-SRGAN (D-1). To reconfigure t
 
 ## Dependencies
 * Python 3
-* Python packages: ```pip install numpy scikit-image scipy pywt pandas torch torchvision Pillow einops matplotlib```
+* Python packages: ```pip install numpy scikit-image scipy PyWavelets pandas torch torchvision Pillow einops matplotlib```
 
 ## Pretrained Models
 Pretrained models are available on Google Drive at the following link:
