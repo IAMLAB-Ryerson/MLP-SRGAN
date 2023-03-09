@@ -1,6 +1,7 @@
 # MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
 
 [![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues)
+[![Pylint](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/actions/workflows/pylint.yml/badge.svg)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/actions/workflows/pylint.yml)
 
 ## Contents
 This repository contains:
