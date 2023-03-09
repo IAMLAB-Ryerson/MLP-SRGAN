@@ -1,31 +1,29 @@
-import argparse
+"""Module eval image runs inference on a 2D image."""
 import time
 import os
-import numpy as np
 
+import numpy as np
 import torch
 from torchvision.utils import save_image
-from torchvision import transforms
+from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 from PIL import Image
 from torch.autograd import Variable
-from torchvision.transforms import ToTensor, ToPILImage
 
-from model import *
-from datasets import *
+from model import GeneratorMixer
+from datasets import denormalize
 
 
 # Model Path
-model_path = '/media/samir/Primary/Deep Learning Models/Super Resolution/proposed_method_depth_1/models/generator_199.pth'
-image_path = '/media/samir/Primary/Data/Super Resolution/MSSEG2/Slices/Sagittal/LR/'
-ref_path = '/media/samir/Primary/Data/Super Resolution/MSSEG2/Holdout Test/reference/'
-out_path = '/media/samir/Primary/Data/Super Resolution/MSSEG2/Holdout Test/proposed_method2_depth_1/'
+MODEL_PATH = 'proposed_method_depth_1/models/generator_199.pth'
+IMAGE_PATH = 'MSSEG2/Slices/Sagittal/LR/'
+OUT_PATH = 'MSSEG2/Holdout Test/proposed_method2_depth_1/'
 
-hr_height = 256
+HR_HEIGHT = 256
 
 # Normalization parameters for pre-trained PyTorch models
 mean = np.array([0.485, 0.456, 0.406])
 std = np.array([0.229, 0.224, 0.225])
-transform = transforms.Compose([transforms.Resize((hr_height // 4, hr_height), Image.BICUBIC), transforms.ToTensor(), transforms.Normalize(mean, std)])
+tform = Compose([Resize((HR_HEIGHT//4,HR_HEIGHT), Image.BICUBIC), ToTensor(), Normalize(mean,std)])
 
 # Check for CUDA
 cuda = torch.cuda.is_available()
@@ -33,22 +31,22 @@ cuda = torch.cuda.is_available()
 # Load Model
 model = GeneratorMixer().eval()
 if cuda:
-	model = model.cuda()
+    model = model.cuda()
 
-model.load_state_dict(torch.load(model_path))
+model.load_state_dict(torch.load(MODEL_PATH))
 
 # Load Images
-images = os.listdir(ref_path)
+images = os.listdir(IMAGE_PATH)
 
 for image in images:
-	print('Evaluating Image: ' + image)
-	img = Image.open(ref_path + image)
-	img = Variable(transform(img)).unsqueeze(0)
-	if cuda:
-		img = img.cuda()
+    print('Evaluating Image: ' + image)
+    img = Image.open(IMAGE_PATH + image)
+    img = Variable(tform(img)).unsqueeze(0)
+    if cuda:
+        img = img.cuda()
 
-	start = time.time()
-	out = denormalize(model(img))
-	end = time.time() - start
-	print(end)
-	save_image(out, out_path + image)
+    start = time.time()
+    out = denormalize(model(img))
+    end = time.time() - start
+    print(end)
+    save_image(out, OUT_PATH + image)
