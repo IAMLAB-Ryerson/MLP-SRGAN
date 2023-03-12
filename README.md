@@ -4,7 +4,7 @@
 
 # MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
 
-[![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues)
+[![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues) ![visitors](https://visitor-badge.glitch.me/badge?page_id=IAMLAB-Ryerson/MLP-SRGAN) 
 
 ## Dependencies
 * Python 3
