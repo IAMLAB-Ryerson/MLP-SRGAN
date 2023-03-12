@@ -85,28 +85,28 @@ def main():
         if ((extension == ".mat") or (extension == ".nii") or (extension == ".gz")):
             if (extension == ".mat"):
                 img, m = IAMLAB_mat_loader(path)
-                # try:
-                #     output_container = np.zeros((4*img.shape[0], img.shape[1], img.shape[2]))
-                #     slices = img.shape[2]
-                #     for s in range(slices):
-                #         print('Testing Slice: ' + str(s))
-                #         sag_img = img[:, :, s]
-                #         output, _ = upsampler.enhance(sag_img, outscale=args.outscale)
-                #         output_container[:, :, s] = output
-                # except RuntimeError as error:
-                #     print('Error', error)
-                #     print('[ERROR] If you encounter CUDA out of memory try to decrease the batch size.')
-                # else:
-                #     if args.ext == 'auto':
-                #         extension = extension[1:]
-                #     else:
-                #         extension = args.ext
-                #     if args.suffix == '':
-                #         save_path = os.path.join(args.output, f'{imgname}.{extension}')
-                #     else:
-                #         save_path = os.path.join(args.output, f'{imgname}_{args.suffix}.{extension}')
-                #     vol = IAMLAB_mat_writer(output_container, m)
-                #     sio.savemat(save_path, {'SRvol': vol}, do_compression = True)
+                try:
+                    output_container = np.zeros((4*img.shape[0], img.shape[1], img.shape[2]))
+                    slices = img.shape[2]
+                    for s in range(slices):
+                        print('Testing Slice: ' + str(s))
+                        sag_img = img[:, :, s]
+                        output, _ = upsampler.enhance(sag_img, outscale=args.outscale)
+                        output_container[:, :, s] = output
+                except RuntimeError as error:
+                    print('Error', error)
+                    print('[ERROR] If you encounter CUDA out of memory try to decrease the batch size.')
+                else:
+                    if args.ext == 'auto':
+                        extension = extension[1:]
+                    else:
+                        extension = args.ext
+                    if args.suffix == '':
+                        save_path = os.path.join(args.output, f'{imgname}.{extension}')
+                    else:
+                        save_path = os.path.join(args.output, f'{imgname}_{args.suffix}.{extension}')
+                    vol = IAMLAB_mat_writer(output_container, m)
+                    sio.savemat(save_path, {'SRvol': vol}, do_compression = True)
             if ((extension == ".nii") or (extension == ".gz")):
                 img, m = IAMLAB_nii_loader(path)
                 try:
