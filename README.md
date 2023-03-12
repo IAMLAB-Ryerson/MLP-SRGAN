@@ -46,6 +46,8 @@ If you have any questions please email `samir.mitha@torontometu.ca`.
 ## Citations
 
 ## See Also
-This repository uses the [PyTorch MLP-Mixer](https://github.com/lucidrains/mlp-mixer-pytorch)
+This repository uses the [PyTorch MLP-Mixer](https://github.com/lucidrains/mlp-mixer-pytorch).
+
 This repository uses the format provided by [BasicSR](https://github.com/XPixelGroup/BasicSR). Please check out the repository!
+
 This work is inspired by [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) for natural images.
