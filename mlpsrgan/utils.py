@@ -51,7 +51,7 @@ class MLPSRGANer():
         else:
             self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') if device is None else device
 
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path, map_location=torch.device(self.device)))
 
         model.eval()
         self.model = model.to(self.device)
