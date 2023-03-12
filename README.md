@@ -42,7 +42,9 @@ https://drive.google.com/drive/folders/1q4f1Yzraqtgdplw9dAtbdtWLGSm7vzHx?usp=sha
 If you have any questions please email `samir.mitha@torontometu.ca`.
 
 ## License
-[GPL v3](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/blob/main/LICENSE)
+[GPL v3.0](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/blob/main/LICENSE)
+
+## arXiv Paper
 
 ## Citations
 
