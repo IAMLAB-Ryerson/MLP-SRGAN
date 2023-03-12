@@ -6,10 +6,6 @@
 
 [![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues) ![visitors](https://visitor-badge.glitch.me/badge?page_id=IAMLAB-Ryerson/MLP-SRGAN) ![license](https://img.shields.io/badge/license-GPL%20v3.0-blue) 
 
-## Dependencies
-* Python 3
-* Python packages: ```pip install numpy scikit-image scipy PyWavelets pandas torch torchvision einops matplotlib nibabel basicsr```
-
 Note: training script is not yet implemented
 
 ## Command Line Usage
