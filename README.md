@@ -10,6 +10,8 @@
 * Python 3
 * Python packages: ```pip install numpy scikit-image scipy PyWavelets pandas torch torchvision einops matplotlib nibabel basicsr```
 
+Note: training script is not yet implemented
+
 ## Command Line Usage
 Ideal input image size is 256 x 64, tiling will be used if images exceed these dimensions.
 
