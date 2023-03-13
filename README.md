@@ -6,8 +6,6 @@
 
 [![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues) ![visitors](https://visitor-badge.glitch.me/badge?page_id=IAMLAB-Ryerson/MLP-SRGAN) ![license](https://img.shields.io/badge/license-GPL%20v3.0-blue) [![Docker image](https://img.shields.io/badge/docker-1.0.0-blue)](https://hub.docker.com/repository/docker/samirmitha/mlp-srgan/general) [![CODIDO image](https://img.shields.io/badge/CODIDO-1.0.0-blue)](https://www.codido.co/marketplace/browse)
 
-Note: training script is not yet implemented
-
 ## Command Line Usage
 Ideal input image size is 256 x 64, tiling will be used if images exceed these dimensions.
 
