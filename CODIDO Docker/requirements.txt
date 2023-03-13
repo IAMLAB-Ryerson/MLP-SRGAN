@@ -1,0 +1,14 @@
+basicsr==1.4.2
+einops==0.6.0
+nibabel==5.0.1
+numpy==1.24.1
+pandas==1.5.2
+PyWavelets==1.4.1
+scikit_image==0.19.3
+scipy==1.10.1
+scikit-image==0.19.3
+torch==1.13.1
+torchinfo==1.7.2
+torchvision==0.14.1
+opencv-python
+boto3

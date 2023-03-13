@@ -4,7 +4,7 @@
 
 # MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
 
-[![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues) ![visitors](https://visitor-badge.glitch.me/badge?page_id=IAMLAB-Ryerson/MLP-SRGAN) ![license](https://img.shields.io/badge/license-GPL%20v3.0-blue) 
+[![issues](https://img.shields.io/github/issues-raw/IAMLAB-Ryerson/MLP-SRGAN)](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/issues) ![visitors](https://visitor-badge.glitch.me/badge?page_id=IAMLAB-Ryerson/MLP-SRGAN) ![license](https://img.shields.io/badge/license-GPL%20v3.0-blue) [![Docker image](https://img.shields.io/badge/docker-1.0.0-blue)](https://hub.docker.com/repository/docker/samirmitha/mlp-srgan/general) [![CODIDO image](https://img.shields.io/badge/CODIDO-1.0.0-blue)](https://www.codido.co/marketplace/browse)
 
 Note: training script is not yet implemented
 
@@ -24,6 +24,22 @@ Usage: python inference_mlpsrgan.py -n mlp-srgan-d-1 -i infile -o outfile [optio
   --fp16               Use fp16 precision during inference. Default: fp32 (single precision).
   --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. Default: auto
 ```
+
+## CODIDO / Docker
+### Building From Source
+To build docker from source download the source code here and run the following docker build command:
+```
+docker build -t samirmitha/mlp-srgan:1.0.0 .
+```
+
+### Pulling Docker Image Directly
+The docker image can be pulled directly from dockerhub using the following command:
+```
+docker pull samirmitha/mlp-srgan:1.0.0
+```
+
+### Running on CODIDO
+The docker can also be run directly on [CODIDO](https://www.codido.co/marketplace/browse)!
 
 ## Pretrained Models
 Pretrained models are available on Google Drive at the following link:
