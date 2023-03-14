@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="assets/IAMLab-Logo.jpg" alt="https://www.torontomu.ca/akhademi/" height=120>
-</p>
+<p align="center"><a href="https://www.torontomu.ca/akhademi/">
+  <img src="assets/IAMLab-Logo.jpg" height=120>
+</a></p>
 
 # MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
 
