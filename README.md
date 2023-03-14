@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/IAMLab-Logo.jpg" height=120>
+  <img src="assets/IAMLab-Logo.jpg" alt="https://www.torontomu.ca/akhademi/" height=120>
 </p>
 
 # MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer
@@ -57,10 +57,23 @@ If you have any questions please email `samir.mitha@torontometu.ca`.
 [GPL v3.0](https://github.com/IAMLAB-Ryerson/MLP-SRGAN/blob/main/LICENSE)
 
 ## arXiv Paper
+https://arxiv.org/abs/2303.06298
 
-## Citations
+## Citation
+```
+@misc{mitha_choe_maralani_moody_khademi_2023, 
+    title={MLP-SRGAN: A single-dimension super resolution gan using MLP-mixer}, 
+    url={https://arxiv.org/abs/2303.06298}, 
+    journal={arXiv.org}, 
+    author={Mitha, Samir and Choe, Seungho and Maralani, Pejman Jahbedar and Moody, Alan R. and Khademi, April}, 
+    year={2023}, 
+    month={Mar}
+}
+```
 
 ## See Also
+https://www.torontomu.ca/akhademi/
+
 This repository uses the [PyTorch MLP-Mixer](https://github.com/lucidrains/mlp-mixer-pytorch).
 
 This repository uses the format provided by [BasicSR](https://github.com/XPixelGroup/BasicSR). Please check out the repository!
