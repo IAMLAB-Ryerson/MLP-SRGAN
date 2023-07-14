@@ -15,7 +15,7 @@ Usage: python inference_mlpsrgan.py -n mlp-srgan-d-1 -i infile -o outfile [optio
   -h                   show this help
   -i --input           Input image or folder | for 3D medical images use axial plane. Default: inputs
   -o --output          Output folder. Default: results
-  -n --model_name      Model name. Default: RealESRGAN_x4plus
+  -n --model_name      Model name. Default: mlp-srgan-d-1
   -s, --outscale       The final upsampling scale of the image (only 4 is available at the moment). Default: 4
   --suffix             Suffix of the restored image. Default: out
   -t, --tile           Tile size, 0 for no tile during testing. Default: 0
